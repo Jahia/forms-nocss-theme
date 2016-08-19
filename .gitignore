@@ -1,0 +1,11 @@
+/bower_components
+/node_modules
+/node
+/etc
+/.classpath
+/.project
+/.settings
+.idea
+*.iml
+*.ipr
+/target
