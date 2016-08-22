@@ -26,14 +26,6 @@
            value="{{input.builderValue}}"
            ff-validations
            ff-logic>
-    <!--ff-date-picker read-only="{{datePicker.isDisabled}}"
-                    date-picker-size="input.datepickersize"
-                    is-disabled="{{datePicker.isDisabled}}"
-                    min-date-placeholder="input.placeholder"
-                    date-picker-options="datePicker.datePickerOptions"
-                    min-value="input.value"
-                    parser-separator>
-    </ff-date-picker-->
     <p>
         <span ng-show="input.helptext != undefined">
             {{input.helptext}}
