@@ -1,16 +1,23 @@
 <!-- Date picker-->
 <div ng-class="{'ff-has-error': form[input.name].$invalid&&form[input.name].$dirty}"
      ng-show="resolveLogic()">
+    <label>
+        {{input.label}}
+        <span ng-if="isRequired()"
+              ng-show="form.$dirty">
+            <sup>&nbsp;*</sup>
+        </span>
+    </label>
     <%--Live mode--%>
     <input ng-if="!readOnly"
-           type="hidden"
+           type="text"
            name="{{input.name}}"
            ng-model="input.value"
-           value="{{input.value}}"
            ng-required="isRequired()"
            ff-validations
            ff-logic
-           ff-date-picker-validator>
+           ff-date-picker-validator
+           ff-date-picker-ui>
     <%--Builder mode--%>
     <input ng-if="readOnly"
            type="hidden"
@@ -19,21 +26,14 @@
            value="{{input.builderValue}}"
            ff-validations
            ff-logic>
-    <label>
-        {{input.label}}
-        <span ng-if="isRequired()"
-              ng-show="form.$dirty">
-            <sup>&nbsp;*</sup>
-        </span>
-    </label>
-    <ff-date-picker read-only="{{datePicker.isDisabled}}"
+    <!--ff-date-picker read-only="{{datePicker.isDisabled}}"
                     date-picker-size="input.datepickersize"
                     is-disabled="{{datePicker.isDisabled}}"
                     min-date-placeholder="input.placeholder"
                     date-picker-options="datePicker.datePickerOptions"
                     min-value="input.value"
                     parser-separator>
-    </ff-date-picker>
+    </ff-date-picker-->
     <p>
         <span ng-show="input.helptext != undefined">
             {{input.helptext}}
