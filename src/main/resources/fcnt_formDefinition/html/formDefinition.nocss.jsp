@@ -47,10 +47,10 @@
             </div>
             <div ng-if="vm.getCaptchaKey() !== null && vm.currentForm.steps.length-1 === vm.currentStep && vm.currentForm.displayCaptcha">
 
-                    <div vc-recaptcha theme="'light'"
-                         key="vm.getCaptchaKey()"
-                         on-create="vm.notifyOfCaptchaLoad()">
-                    </div>
+                <div vc-recaptcha theme="'light'"
+                     key="vm.getCaptchaKey()"
+                     on-create="vm.notifyOfCaptchaLoad()">
+                </div>
             </div>
             <div>
                 <button type="button"
@@ -80,12 +80,9 @@
                         ng-show="!vm.isSubmitted()"
                         message-key="angular.ffController.button.reset">
                 </button>
-                </div>
+            </div>
         </fieldset>
-</div>
-</div>
-</form>
-</div>
+    </form>
 </div>
 
 
