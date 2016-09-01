@@ -50,7 +50,7 @@
   <parent>
     <groupId>org.jahia.modules</groupId>
     <artifactId>jahia-modules</artifactId>
-    <version>7.1.1.1-SNAPSHOT</version>
+    <version>7.1.0.0</version>
   </parent>
   <artifactId>form-factory-nocss-theme</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -58,8 +58,8 @@
   <name>Form Factory No CSS Theme</name>
   <description>This module define views for all Form factory inputs without any css class</description>
   <scm>
-    <connection>scm:git:git@github.com:ssavu/form-factory-custom-theme.git</connection>
-    <developerConnection>scm:git:git@github.com:ssavu/form-factory-custom-theme.git</developerConnection>
+    <connection>scm:git:git@github.com:Jahia/form-factory-custom-theme.git</connection>
+    <developerConnection>scm:git:git@github.com:Jahia/form-factory-custom-theme.git</developerConnection>
   </scm>
   <repositories>
     <repository>
@@ -82,19 +82,19 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
-      <id>jahia-enterprise</id>
-      <name>Jahia Enterprise Repository</name>
-      <url>https://devtools.jahia.com/nexus/content/groups/enterprise</url>
+      <id>form-factory</id>
+      <name>Form Factory Repository</name>
+      <url>https://devtools.jahia.com/nexus/content/repositories/form-factory-releases</url>
     </repository>
   </repositories>
   <distributionManagement>
     <repository>
-      <id>jahia-enterprise-releases</id>
-      <url>https://devtools.jahia.com/nexus/content/repositories/jahia-enterprise-releases</url>
+      <id>form-factory-releases</id>
+      <url>https://devtools.jahia.com/nexus/content/repositories/form-factory-releases</url>
     </repository>
     <snapshotRepository>
-      <id>jahia-enterprise-snapshots</id>
-      <url>https://devtools.jahia.com/nexus/content/repositories/jahia-enterprise-snapshots</url>
+      <id>form-factory-snapshots</id>
+      <url>https://devtools.jahia.com/nexus/content/repositories/form-factory-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
   <dependencies>
