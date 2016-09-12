@@ -82,7 +82,7 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
-      <id>form-factory-releases</id>
+      <id>form-factory</id>
       <name>Form Factory Repository</name>
       <url>https://devtools.jahia.com/nexus/content/repositories/form-factory-releases</url>
     </repository>
