@@ -115,7 +115,7 @@
           <instructions>
             <Jahia-Depends>default,siteSettings,form-factory-core</Jahia-Depends>
             <!--Higher priority than form-factory-core (2)-->
-            <Jahia-Module-Priority>3</Jahia-Module-Priority>
+            <Jahia-Module-Priority>4</Jahia-Module-Priority>
           </instructions>
         </configuration>
       </plugin>

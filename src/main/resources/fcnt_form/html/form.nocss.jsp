@@ -26,3 +26,9 @@
         angular.module('formFactory').directive('ffDatePickerUi', ['$log', 'i18nService', 'ffCommonUseFactory', datePickerJqueryUI]);
     })();
 </script>
+<style>
+    .ff-has-error {
+        color: red;
+        border: 1px solid red ;
+    }
+</style>
