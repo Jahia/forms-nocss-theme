@@ -82,9 +82,9 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
-      <id>jahia-enterprise</id>
-        <name>Jahia Enterprise Repository</name>
-        <url>https://devtools.jahia.com/nexus/content/groups/enterprise</url>
+      <id>form-factory</id>
+      <name>Form Factory Repository</name>
+      <url>https://devtools.jahia.com/nexus/content/repositories/form-factory-releases</url>
     </repository>
   </repositories>
   <distributionManagement>
