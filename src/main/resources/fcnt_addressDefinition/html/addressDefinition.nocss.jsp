@@ -18,7 +18,7 @@
 <div ng-class="{'ff-has-error': form[input.name].$invalid&&form.$dirty}"
      ng-show="resolveLogic()" ff-validations ff-logic>
     <fieldset>
-        <legend class="col-sm-2 control-label">
+        <legend>
             {{input.label}}
         </legend>
         <input name="{{input.name}}" type="hidden" ng-model="input.value" ng-model-options="{allowInvalid:true}"/>
@@ -27,37 +27,31 @@
                    ng-model="input.value.address1"
                    type="text"
                    placeholder="{{input.address1Placeholder}}"
-                   ng-readonly="readOnly"
-                   class="form-control"/>
+                   ng-readonly="readOnly"/>
         </div>
         <div>
             <input ng-model="input.value.address2"
                    type="text"
                    placeholder="{{input.address2Placeholder}}"
-                   ng-readonly="readOnly"
-                   class="form-control"/>
+                   ng-readonly="readOnly"/>
         </div>
         <div>
             <input ng-model="input.value.city"
                    type="text"
                    placeholder="{{input.cityPlaceholder}}"
-                   class="form-control"
                    ng-readonly="readOnly"/>
             <input ng-model="input.value.state"
                    type="text"
                    placeholder="{{input.statePlaceholder}}"
-                   ng-readonly="readOnly"
-                   class="form-control"/>
+                   ng-readonly="readOnly"/>
         </div>
         <div>
             <input ng-model="input.value.zipcode"
                    type="text"
                    placeholder="{{input.zipcodePlaceholder}}"
-                   ng-readonly="readOnly"
-                   class="form-control"/>
+                   ng-readonly="readOnly"/>
             <select name="{{input.name}}.country"
                     ng-model="input.value.country"
-                    class="form-control"
                     ng-disabled="readOnly"
                     ng-options="country as country.country.name for country in countries | orderBy: country.name">
             </select>
