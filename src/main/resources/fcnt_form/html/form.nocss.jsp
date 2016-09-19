@@ -18,8 +18,35 @@
                 $(el).datepicker({
                     changeMonth: true,
                     changeYear: true,
-                    dateFormat: 'yy-mm-dd'
+                    dateFormat: normalizeFormat(scope.input.format)
                 });
+
+                function normalizeFormat(format) {
+                    if (format == null || format.trim().length == 0) {
+                        format = 'yy-mm-dd';
+                    }
+                    var separator =  ['-', '/'];
+                    var normalizedFormat = '';
+                    var separatorDetected = false;
+                    for (var i in separator) {
+                        //Go with the first separator we find, as this format should never have more than one type of separator.
+                        if (format.indexOf(separator[i]) !== -1) {
+                            var sections = format.split(separator[i]);
+                            for (var j in sections) {
+                                if (sections[j].toLowerCase().indexOf('y') !== -1) {
+                                    normalizedFormat += sections[j].toLowerCase().substring(0, sections[j].length/2) + (j < sections.length-1 ? separator[i] : '');
+                                } else if (sections[j].toLowerCase().indexOf('m') !== -1) {
+                                    normalizedFormat += sections[j].toLowerCase() + (j < sections.length-1 ? separator[i] : '');
+                                } else if (sections[j].toLowerCase().indexOf('d') !== -1) {
+                                    normalizedFormat += sections[j].toLowerCase() + (j < sections.length-1 ? separator[i] : '');
+                                }
+                            }
+                            separatorDetected = true;
+                            break;
+                        }
+                    }
+                    return normalizedFormat;
+                }
             }
         };
 
