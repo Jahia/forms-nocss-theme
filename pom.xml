@@ -58,8 +58,8 @@
   <name>Form Factory No CSS Theme</name>
   <description>This module define views for all Form factory inputs without any css class</description>
   <scm>
-    <connection>scm:git:git@github.com:Jahia/form-factory-custom-theme.git</connection>
-    <developerConnection>scm:git:git@github.com:Jahia/form-factory-custom-theme.git</developerConnection>
+    <connection>scm:git:git@github.com:Jahia/form-factory-nocss-theme.git</connection>
+    <developerConnection>scm:git:git@github.com:Jahia/form-factory-nocss-theme.git</developerConnection>
   </scm>
   <repositories>
     <repository>

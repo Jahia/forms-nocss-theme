@@ -15,10 +15,21 @@
             return directive;
 
             function linkFunction(scope, el, attr, ctrl) {
+                var pickerScope = scope;
                 $(el).datepicker({
                     changeMonth: true,
                     changeYear: true,
-                    dateFormat: normalizeFormat(scope.input.format)
+                    dateFormat: normalizeFormat(scope.input.format),
+                    onClose: function(dateAsTxt) {
+                        pickerScope.input.value = moment(dateAsTxt,pickerScope.input.format).toJSON();
+                        pickerScope.input.previouslySelected = dateAsTxt;
+                    },
+                    beforeShow:function() {
+                        if(pickerScope.input.previouslySelected !== undefined) {
+                            return {defaultDate : pickerScope.input.previouslySelected}
+                        }
+                        return null;
+                    }
                 });
 
                 function normalizeFormat(format) {
