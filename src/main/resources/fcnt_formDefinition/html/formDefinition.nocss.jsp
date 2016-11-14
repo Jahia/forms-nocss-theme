@@ -32,7 +32,8 @@
 <div>
     <form novalidate name="{{vm.formName}}"
           ng-model-options="{updateOn:'default blur', debounce: { default: 0, blur: 0 } }"
-          ng-submit="vm.preventSubmit($event)">
+          ng-submit="vm.preventSubmit($event)"
+          class="{{vm.cssClassName}}">
         <fieldset>
             <legend ng-if="vm.showFormTitle">{{vm.currentForm.displayableName}}</legend>
             <div ng-repeat="input in vm.inputs">
