@@ -13,18 +13,20 @@
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 
 <div ng-if="vm.getFormController().$submitted">
-    <div ng-if="vm.displaySubmissionText && vm.currentForm.callbackName !== null">
+    <div ng-if="vm.displaySubmissionText && vm.currentForm.callbackName != null">
         <div>
-            <ff-callback data="vm.callbackData"
-                         callback-directive="{{vm.currentForm.callbackName}}">
+            <ff-callback ng-if="vm.runCallbacks"
+                         action-data="vm.actionData"
+                         result-data="vm.resultData"
+                         callback-directives="vm.currentForm.callbacks.callbacks"
+                         all-completed-flag="vm.displaySubmissionText"
+                         display-templates="vm.currentForm.callbacks.displayTemplates">
             </ff-callback>
         </div>
     </div>
-    <div ng-if="vm.displaySubmissionText && vm.currentForm.callbackName === null">
+    <div ng-if="vm.displaySubmissionText">
         <div>
-            <strong>
-                {{vm.currentForm.afterSubmissionText}}
-            </strong>
+            <strong ng-bind-html="vm.currentForm.afterSubmissionText"></strong>
         </div>
     </div>
 </div>
