@@ -16,7 +16,7 @@
             ng-model="input.value"
             ng-required="isRequired()"
             ng-options="country as country.country.name for country in countries track by country.country.key"
-            ng-disabled="readOnly"
+            ng-disabled="readOnly()"
             ff-validations
             ff-logic>
         <option value="">{{input.placeholder}}</option>

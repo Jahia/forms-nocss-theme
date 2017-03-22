@@ -10,7 +10,7 @@
             name="{{input.name}}"
             ng-model="input.value"
             ng-required="isRequired()"
-            ng-disabled="readOnly"
+            ng-disabled="readOnly()"
             ff-validations
             ff-logic>
         <option ng-if="input.value == '' || input.value === null" value="">{{input.placeholder}}</option>

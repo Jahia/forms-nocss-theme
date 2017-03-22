@@ -4,8 +4,8 @@
     </label>
 
     <span class="switch"
-              ng-click="readOnly ? input.value : input.value =! input.value"
-              ng-class="{'{{input.color}}' : input.value, 'disabled' : readOnly}">
+              ng-click="readOnly() ? input.value : input.value =! input.value"
+              ng-class="{'{{input.color}}' : input.value, 'disabled' : readOnly()}">
             <small></small>
             <input style="display:none;"
                    type="checkbox"

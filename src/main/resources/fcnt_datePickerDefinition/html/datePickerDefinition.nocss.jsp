@@ -19,7 +19,7 @@
            ff-date-picker-validator
            ff-date-picker-ui>
     <%--Builder mode--%>
-    <input ng-if="readOnly"
+    <input ng-if="readOnly()"
            type="hidden"
            name="{{input.name}}"
            ng-model="input.value"

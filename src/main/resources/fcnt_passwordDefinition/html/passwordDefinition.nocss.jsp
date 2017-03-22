@@ -2,7 +2,7 @@
 <div ng-class="{'ff-has-error': form[input.name].$invalid&&form[input.name].$dirty}"
      ng-show="resolveLogic()">
     <label>
-        {{input.label}}<span ng-if="isRequired()" ng-show="form.$dirty"><sup>&nbsp;<i class="fa fa-asterisk fa-sm"></i></sup></span>
+        {{input.label}}<span ng-if="isRequired()" ng-show="form.$dirty"><sup>&nbsp;*</sup></span>
     </label>
 
     <input type="password"
@@ -11,7 +11,7 @@
            name="{{input.name}}"
            ng-model="input.value"
            ng-required="isRequired()"
-           ng-readonly="readOnly"
+           ng-readonly="readOnly()"
            ff-validations
            ff-logic>
     <p>

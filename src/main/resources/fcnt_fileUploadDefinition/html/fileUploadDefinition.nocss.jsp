@@ -27,7 +27,7 @@
             </span>
         </p>
     </div>
-    <div ng-if="readOnly">
+    <div ng-if="readOnly()">
         <button ng-disabled="true">
             <fmt:message key="fcnt_fileUploadDefinition.selectFile"/>
         </button>
