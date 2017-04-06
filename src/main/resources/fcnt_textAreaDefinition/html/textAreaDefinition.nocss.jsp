@@ -11,7 +11,7 @@
                   placeholder="{{input.placeholder}}"
                   name="{{input.name}}"
                   ng-required="isRequired()"
-                  ng-readonly="readOnly()"
+                  ng-readonly="readOnly"
                   ff-validations
                   ff-logic>
             {{input.value}}

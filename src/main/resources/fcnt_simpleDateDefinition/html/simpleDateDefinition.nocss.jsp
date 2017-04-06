@@ -15,17 +15,20 @@
         <select ng-model="date.selectedYear"
                 ng-model-options="{ allowInvalid: true, updateOn: 'default', debounce: {'default': 0} }"
                 ng-change="updateDateModel('year')"
-                ng-options="year.id as year.id for year in date.years | orderBy: year.id:true">
+                ng-options="year.id as year.id for year in date.years | orderBy: year.id:true"
+                ng-disabled="readOnly">
         </select>
         <select ng-model="date.selectedMonth"
                 ng-model-options="{ allowInvalid: true, updateOn: 'default', debounce: {'default': 0} }"
                 ng-change="updateDateModel('month')"
-                ng-options="month.id as month.id for month in date.months">
+                ng-options="month.id as month.id for month in date.months"
+                ng-disabled="readOnly">
         </select>
         <select ng-model="date.selectedDay"
                 ng-model-options="{ allowInvalid: true, updateOn: 'default', debounce: {'default': 0} }"
                 ng-change="updateDateModel('day')"
-                ng-options="day.id as day.id disable when !day.displayable for day in date.days">
+                ng-options="day.id as day.id disable when !day.displayable for day in date.days"
+                ng-disabled="readOnly">
         </select>
     </div>
     <p>

@@ -17,9 +17,9 @@
                        ng-required="checkValues()"
                        checklist-value="checkboxOption.key"
                        checklist-change="makeDirty(); ffValidate()"
-                       checklist-watch="readOnly()"
+                       checklist-watch="readOnly"
                        ng-model-options="{'allowInvalid':true}"
-                       ng-disabled="readOnly()">
+                       ng-disabled="readOnly">
                 {{checkboxOption.value}}
             </label>
         </div>

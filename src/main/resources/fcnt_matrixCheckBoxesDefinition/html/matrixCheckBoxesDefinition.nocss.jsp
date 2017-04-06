@@ -32,7 +32,8 @@
                        name="{{::(input.name+'.'+rowv.key)}}"
                        checklist-model="input.value[rowv.key]"
                        checklist-value="colv.key"
-                       checklist-change="makeDirty(); ffValidate()">
+                       checklist-change="makeDirty(); ffValidate()"
+                       ng-disabled="readOnly">
             </td>
         </tr>
         </tbody>

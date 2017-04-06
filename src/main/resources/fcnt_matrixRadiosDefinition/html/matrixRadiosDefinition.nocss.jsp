@@ -31,7 +31,8 @@
                        name="{{::(input.name+'.'+rowv.key)}}"
                        ng-model="input.value[rowv.key]"
                        value="{{colv.key}}"
-                       ng-change="makeDirty(); ffValidate()"></td>
+                       ng-change="makeDirty(); ffValidate()"
+                       ng-disabled="readOnly"></td>
         </tr>
         </tbody>
     </table>

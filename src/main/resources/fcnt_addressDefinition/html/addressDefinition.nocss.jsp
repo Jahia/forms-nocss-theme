@@ -27,32 +27,32 @@
                    ng-model="input.value.address1"
                    type="text"
                    placeholder="{{input.address1Placeholder}}"
-                   ng-readonly="readOnly()"/>
+                   ng-readonly="readOnly"/>
         </div>
         <div>
             <input ng-model="input.value.address2"
                    type="text"
                    placeholder="{{input.address2Placeholder}}"
-                   ng-readonly="readOnly()"/>
+                   ng-readonly="readOnly"/>
         </div>
         <div>
             <input ng-model="input.value.city"
                    type="text"
                    placeholder="{{input.cityPlaceholder}}"
-                   ng-readonly="readOnly()"/>
+                   ng-readonly="readOnly"/>
             <input ng-model="input.value.state"
                    type="text"
                    placeholder="{{input.statePlaceholder}}"
-                   ng-readonly="readOnly()"/>
+                   ng-readonly="readOnly"/>
         </div>
         <div>
             <input ng-model="input.value.zipcode"
                    type="text"
                    placeholder="{{input.zipcodePlaceholder}}"
-                   ng-readonly="readOnly()"/>
+                   ng-readonly="readOnly"/>
             <select name="{{input.name}}.country"
                     ng-model="input.value.country"
-                    ng-disabled="readOnly()"
+                    ng-disabled="readOnly"
                     ng-options="country as country.country.name for country in countries | orderBy: country.name">
             </select>
         </div>

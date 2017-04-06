@@ -16,7 +16,7 @@
                    ng-model-options="{'allowInvalid':true}"
                    value="{{radiov.key}}"
                    ng-required="isRequired()"
-                   ng-disabled="readOnly()"
+                   ng-disabled="readOnly"
                    ng-change="makeDirty()"
                    ff-validations
                    ff-logic>
