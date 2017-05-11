@@ -14,22 +14,6 @@
 
 <ff-progress-bar view-type="nocss" ng-if="!_.isUndefined(vm.currentForm.progressBar) && (vm.currentForm.progressBar.position === 'top' || vm.currentForm.progressBar.position === 'both') && !vm.getFormController().$submitted"
                  form="vm.currentForm" current-step="vm.currentStep"></ff-progress-bar>
-<div ng-if="vm.getFormController().$submitted">
-    <ff-callback ng-if="vm.runCallbacks"
-                 action-data="vm.actionData"
-                 result-data="vm.resultData"
-                 callback-directives="vm.currentForm.callbacks.callbacks"
-                 all-completed-flag="vm.displaySubmissionText"
-                 display-templates="vm.currentForm.callbacks.displayTemplates">
-    </ff-callback>
-
-    <div ng-if="vm.displaySubmissionText">
-        <div>
-            <strong ng-bind-html="vm.currentForm.afterSubmissionText"></strong>
-        </div>
-    </div>
-</div>
-
 <div>
     <form novalidate name="{{vm.formName}}"
           ng-model-options="{updateOn:'default blur', debounce: { default: 0, blur: 0 } }"
@@ -37,6 +21,25 @@
           class="{{vm.cssClassName}}">
         <fieldset>
             <legend ng-if="vm.showFormTitle">{{vm.currentForm.displayableName}}</legend>
+
+            <!--** START ** Display after form submission **-->
+            <div ng-if="vm.getFormController().$submitted">
+                <ff-callback ng-if="vm.runCallbacks"
+                             action-data="vm.actionData"
+                             result-data="vm.resultData"
+                             callback-directives="vm.currentForm.callbacks.callbacks"
+                             all-completed-flag="vm.displaySubmissionText"
+                             display-templates="vm.currentForm.callbacks.displayTemplates">
+                </ff-callback>
+
+                <div ng-if="vm.displaySubmissionText">
+                    <div>
+                        <strong ng-bind-html="vm.currentForm.afterSubmissionText"></strong>
+                    </div>
+                </div>
+            </div>
+            <!--** END ** Display after form submission **-->
+
             <div ng-repeat="input in vm.inputs">
                 <ff-input
                         input="input"
