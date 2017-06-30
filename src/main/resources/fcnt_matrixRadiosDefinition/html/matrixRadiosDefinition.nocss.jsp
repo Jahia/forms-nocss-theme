@@ -32,7 +32,8 @@
                        ng-model="input.value[rowv.key]"
                        value="{{colv.key}}"
                        ng-change="makeDirty(); ffValidate()"
-                       ng-disabled="readOnly"></td>
+                       ng-disabled="readOnly"
+                       ff-focus-tracker="{{input.name}}_{{rowv.key}}_{{colv.key}}"></td>
         </tr>
         </tbody>
     </table>

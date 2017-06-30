@@ -17,7 +17,8 @@
            ff-validations
            ff-logic
            ff-date-picker-validator
-           ff-date-picker-ui>
+           ff-date-picker-ui
+           ff-focus-tracker="{{input.name}}">
     <%--Builder mode--%>
     <input ng-if="readOnly"
            type="hidden"

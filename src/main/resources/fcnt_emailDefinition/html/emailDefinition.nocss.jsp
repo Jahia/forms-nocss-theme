@@ -17,7 +17,8 @@
            ng-required="isRequired()"
            ng-readonly="readOnly"
            ff-validations
-           ff-logic>
+           ff-logic
+           ff-focus-tracker="{{input.name}}">
     <p>
         <span ng-show="input.helptext != undefined">
             {{input.helptext}}

@@ -33,7 +33,8 @@
                        checklist-model="input.value[rowv.key]"
                        checklist-value="colv.key"
                        checklist-change="makeDirty(); ffValidate()"
-                       ng-disabled="readOnly">
+                       ng-disabled="readOnly"
+                       ff-focus-tracker="{{input.name}}_{{rowv.key}}_{{colv.key}}">
             </td>
         </tr>
         </tbody>

@@ -12,7 +12,8 @@
                    name="{{input.name}}"
                    ng-model="input.value"
                    ff-validations
-                   ff-logic>
+                   ff-logic
+                   ff-focus-tracker="{{input.name}}">
             <span class="switch-text" ng-show="input.displayText">
                 <span class="on">{{input.textOn}}</span>
                 <span class="off">{{input.textOff}}</span>

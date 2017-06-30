@@ -22,7 +22,8 @@
                ng-mouseenter="enter($index + 1)"
                ng-click="rate($index + 1)"
                class="fa {{r.iconSize}}"
-               ng-class="$index < value && (r.stateOn || 'fa-star') || (r.stateOff || 'fa-star-o')">
+               ng-class="$index < value && (r.stateOn || 'fa-star') || (r.stateOff || 'fa-star-o')"
+               ff-focus-tracker="{{input.name}}_{{$index}}">
             </i>
            </span>
     </span>

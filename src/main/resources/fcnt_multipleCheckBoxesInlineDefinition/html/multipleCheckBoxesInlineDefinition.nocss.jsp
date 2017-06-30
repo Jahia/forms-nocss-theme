@@ -18,7 +18,8 @@
                    checklist-change="makeDirty(); ffValidate()"
                    checklist-watch="readOnly"
                    ng-model-options="{'allowInvalid':true}"
-                   ng-disabled="readOnly">
+                   ng-disabled="readOnly"
+                   ff-focus-tracker="{{input.name}}_{{checkboxOption.key}}">
             {{checkboxOption.value}}
         </label>
 

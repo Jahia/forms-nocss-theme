@@ -27,33 +27,39 @@
                    ng-model="input.value.address1"
                    type="text"
                    placeholder="{{input.address1Placeholder}}"
-                   ng-readonly="readOnly"/>
+                   ng-readonly="readOnly"
+                   ff-focus-tracker="{{input.name}}_address1"/>
         </div>
         <div>
             <input ng-model="input.value.address2"
                    type="text"
                    placeholder="{{input.address2Placeholder}}"
-                   ng-readonly="readOnly"/>
+                   ng-readonly="readOnly"
+                   ff-focus-tracker="{{input.name}}_address2"/>
         </div>
         <div>
             <input ng-model="input.value.city"
                    type="text"
                    placeholder="{{input.cityPlaceholder}}"
-                   ng-readonly="readOnly"/>
+                   ng-readonly="readOnly"
+                   ff-focus-tracker="{{input.name}}_city"/>
             <input ng-model="input.value.state"
                    type="text"
                    placeholder="{{input.statePlaceholder}}"
-                   ng-readonly="readOnly"/>
+                   ng-readonly="readOnly"
+                   ff-focus-tracker="{{input.name}}_state"/>
         </div>
         <div>
             <input ng-model="input.value.zipcode"
                    type="text"
                    placeholder="{{input.zipcodePlaceholder}}"
-                   ng-readonly="readOnly"/>
+                   ng-readonly="readOnly"
+                   ff-focus-tracker="{{input.name}}_zipcode"/>
             <select name="{{input.name}}.country"
                     ng-model="input.value.country"
                     ng-disabled="readOnly"
-                    ng-options="country as country.country.name for country in countries | orderBy: country.name">
+                    ng-options="country as country.country.name for country in countries | orderBy: country.name"
+                    ff-focus-tracker="{{input.name}}_country">
             </select>
         </div>
         <p>

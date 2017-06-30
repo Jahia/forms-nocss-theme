@@ -18,7 +18,8 @@
             ng-options="country as country.country.name for country in countries track by country.country.key"
             ng-disabled="readOnly"
             ff-validations
-            ff-logic>
+            ff-logic
+            ff-focus-tracker="{{input.name}}">
         <option value="">{{input.placeholder}}</option>
     </select>
     <p>

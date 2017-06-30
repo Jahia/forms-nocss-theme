@@ -19,7 +19,8 @@
                    ng-disabled="readOnly"
                    ng-change="makeDirty()"
                    ff-validations
-                   ff-logic>
+                   ff-logic
+                   ff-focus-tracker="{{input.name}}_{{radiov.key}}">
             {{radiov.value}}
         </label>
     <p>

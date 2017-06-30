@@ -16,7 +16,8 @@
                ng-model="input.value"
                ng-required="isRequired()"
                ff-validations
-               ff-logic ff-file-input>
+               ff-logic ff-file-input
+               ff-focus-tracker="{{input.name}}">
         <p>
             <span ng-show="input.helptext != undefined">
                 {{input.helptext}}
