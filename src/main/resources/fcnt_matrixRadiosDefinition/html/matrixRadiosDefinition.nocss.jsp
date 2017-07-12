@@ -20,13 +20,13 @@
         <thead>
         <tr>
             <th>&nbsp;</th>
-            <th ng-repeat="(colk, colv) in input.columns"><span>{{colv.value}}</span></th>
+            <th ng-repeat="(colk, colv) in input.columns | filter: 'true' : null : visible"><span>{{colv.value}}</span></th>
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="(rowk, rowv) in input.rows">
+        <tr ng-repeat="(rowk, rowv) in input.rows | filter: 'true' : null : visible">
             <td><span>{{rowv.value}}</span></td>
-            <td ng-repeat="(colk, colv) in input.columns">
+            <td ng-repeat="(colk, colv) in input.columns | filter: 'true' : null : visible">
                 <input type="radio"
                        name="{{::(input.name+'.'+rowv.key)}}"
                        ng-model="input.value[rowv.key]"

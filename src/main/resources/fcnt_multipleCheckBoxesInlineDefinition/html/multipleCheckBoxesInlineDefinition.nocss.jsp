@@ -10,7 +10,7 @@
     </label>
 
     <div ff-validations ff-logic>
-        <label ng-repeat="checkboxOption in input.checkboxes">
+        <label ng-repeat="checkboxOption in input.checkboxes | filter: 'true' : null : visible">
             <input type="checkbox"
                    name="{{input.name}}" checklist-model="input.value"
                    ng-required="checkValues()"

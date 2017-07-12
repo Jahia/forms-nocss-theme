@@ -15,7 +15,7 @@
             ff-logic
             ff-focus-tracker="{{input.name}}">
         <option ng-if="input.value == '' || input.value === null" value="">{{input.placeholder}}</option>
-        <option ng-repeat="option in input.options" value="{{option.key}}">{{option.value}}</option>
+        <option ng-repeat="option in input.options | filter: 'true' : null : visible" value="{{option.key}}">{{option.value}}</option>
     </select>
     <p>
         <span ng-show="input.helptext != undefined">

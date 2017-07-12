@@ -9,7 +9,7 @@
         </span>
     </label>
 
-        <label ng-repeat="(radiok, radiov) in input.radios">
+        <label ng-repeat="(radiok, radiov) in input.radios | filter: 'true' : null : visible">
             <input type="radio"
                    name="{{input.name}}"
                    ng-model="input.value"
