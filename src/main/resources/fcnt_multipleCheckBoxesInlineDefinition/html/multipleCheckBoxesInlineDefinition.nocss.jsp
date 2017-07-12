@@ -4,7 +4,7 @@
     <label>
         {{input.label}}
         <span ng-if="isRequired()"
-              ng-show="form.$dirty">
+              ng-show="asteriskResolver()">
             <sup>&nbsp;*</sup>
         </span>
     </label>

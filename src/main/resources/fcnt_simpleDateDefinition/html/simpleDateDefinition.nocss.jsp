@@ -9,7 +9,7 @@
            ng-model-options="{ allowInvalid: true, updateOn: 'default', debounce: {'default': 0} }"
            ff-logic>
     <label>
-        {{input.label}}<span ng-if="isRequired()" ng-show="form.$dirty"><sup>&nbsp;*</sup></span>
+        {{input.label}}<span ng-if="isRequired()" ng-show="asteriskResolver()"><sup>&nbsp;*</sup></span>
     </label>
     <div>
         <select ng-model="date.selectedYear"

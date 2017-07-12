@@ -2,7 +2,7 @@
 <div ng-class="{'ff-has-error': form[input.name].$invalid&&form[input.name].$dirty}"
      ng-show="resolveLogic()">
     <label>
-        {{input.label}}<span ng-if="isRequired()" ng-show="form.$dirty"><sup>&nbsp;*</sup></span>
+        {{input.label}}<span ng-if="isRequired()" ng-show="asteriskResolver()"><sup>&nbsp;*</sup></span>
     </label>
 
         <textarea rows="{{input.rows}}"
