@@ -25,13 +25,14 @@
             </label>
         </div>
         <p>
-        <span ng-show="input.helptext != undefined">
-            {{input.helptext}}
-        </span>
+            <span ng-show="input.helptext != undefined">
+                {{input.helptext}}
+            </span>
+            <br/>
             <span ng-repeat="(validationName, validation) in input.validations"
-                  ng-show="form[input.name].$error[(validationName | normalize)]&&form[input.name].$dirty">
+                      ng-show="showErrorMessage(validationName)">
                 {{validation.message}}
-        </span>
+            </span>
         </p>
     </div>
 </div>

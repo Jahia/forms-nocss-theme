@@ -18,14 +18,13 @@
             {{input.value}}
         </textarea>
     <p>
-        <span class="help-block"
-              ng-show="input.helptext != undefined">
+        <span ng-show="input.helptext != undefined">
             {{input.helptext}}
         </span>
-        <span class="help-block"
-              ng-repeat="(validationName, validation) in input.validations"
-              ng-show="form[input.name].$error[(validationName | normalize)]&&form[input.name].$dirty">
-                {{validation.message}}
+        <br/>
+        <span ng-repeat="(validationName, validation) in input.validations"
+              ng-show="showErrorMessage(validationName)">
+            {{validation.message}}
         </span>
     </p>
 </div>

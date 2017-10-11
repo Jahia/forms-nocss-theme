@@ -38,10 +38,12 @@
         <span ng-show="input.helptext != undefined">
             {{input.helptext}}
         </span>
+        <br/>
         <span ng-repeat="(validationName, validation) in input.validations"
-              ng-show="form[input.name].$error[(validationName | normalize)]&&form[input.name].$dirty">
+              ng-show="showErrorMessage(validationName)">
             {{validation.message}}
         </span>
+        <br/>
         <span ng-repeat="(errorMessageName, errorMessage) in errorMessages">
             <span ng-if="errorMessage" message-key="{{errorMessageName}}"></span>
         </span>

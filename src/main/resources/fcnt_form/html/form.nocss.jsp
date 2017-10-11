@@ -4,7 +4,13 @@
 <template:addResources type="css" resources="jquery-ui.smoothness.css"/>
 <template:addResources type="css" resources="jquery-ui.smoothness-jahia.css"/>
 <script>
+
     (function(){
+        <!--Configure the ffFormControlProvider-->
+        angular.module('formFactory').config(['ffFormControlProvider', function(ffFormControlProvider) {
+            ffFormControlProvider.setErrorMessageDisplayBehaviour('${errorMessageDisplayBehaviour}');
+        }]);
+
         var datePickerJqueryUI = function($log, i18n, ffCommonUseFactory) {
             var directive = {
                 restrict: 'A',
