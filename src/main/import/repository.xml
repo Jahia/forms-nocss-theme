@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <form-factory-nocss-theme j:dependencies="default"
+        <forms-nocss-theme j:dependencies="default"
                                  j:modulePriority="0"
                                  j:moduleType="module"
-                                 j:title="Form Factory No CSS Theme"
+                                 j:title="Forms No CSS Theme"
                                  jcr:primaryType="jnt:module">
                 
                 <portlets jcr:primaryType="jnt:portletFolder"/>
@@ -15,6 +15,6 @@
                     <contents jcr:primaryType="jnt:contentFolder"/>
                 </templates>
                 
-            </form-factory-nocss-theme>
+            </forms-nocss-theme>
     </modules>
 </content>
