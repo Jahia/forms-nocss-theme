@@ -49,7 +49,7 @@
   <parent>
     <groupId>org.jahia.modules</groupId>
     <artifactId>jahia-modules</artifactId>
-    <version>7.5.0.0-SNAPSHOT</version>
+    <version>8.0.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>forms-nocss-theme</artifactId>
   <version>2.0.0-SNAPSHOT</version>
@@ -62,7 +62,7 @@
     <tag>HEAD</tag>
   </scm>
   <properties>
-    <jahia-module-signature>MCwCFBbEz94sORuA928bVq0f8PvYhZq3AhQdaS9qvpkhOuQGsde9YDZrtybnWw==</jahia-module-signature>
+    <jahia-module-signature>MCwCFG7gqM6I4Mdi+0IGU48diHqJ3ps4AhRHuUoG/YCPodxtklvFGXWnLMW8tA==</jahia-module-signature>
   </properties>
   <repositories>
     <repository>
