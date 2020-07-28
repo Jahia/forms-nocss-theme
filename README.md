@@ -5,9 +5,16 @@
 | Artifacts | [![Snapshot](https://img.shields.io/badge/Snapshot-Nexus-blue)](https://devtools.jahia.com/nexus/content/repositories/jahia-enterprise-snapshots/org/jahia/modules/forms-nocss-theme/) [![Release](https://img.shields.io/badge/Release-Nexus-blue)](https://devtools.jahia.com/nexus/content/repositories/jahia-enterprise-releases/org/jahia/modules/forms-nocss-theme/) |
 | Slack | [![Discussion](https://img.shields.io/badge/Discussion-%23module--forms-blue)](https://jahia.slack.com/archives/C01450KJAJC) [![Notifications](https://img.shields.io/badge/Notifications-%23cci--forms-blue)](https://jahia.slack.com/archives/C013TAA67RV)|
 
+<a href="https://www.jahia.com/">
+    <img src="https://www.jahia.com/modules/jahiacom-templates/images/jahia-3x.png" alt="Jahia logo" title="Jahia" align="right" height="60" />
+</a>
 
-
-# Forms No CSS Theme
+Forms No CSS Theme
+======================
 
 This module contains a view for each input of Forms without any css and no extra HTML markup
 Clone this module to start your [own theme](https://academy.jahia.com/documentation/developer/ff/2.3/managing-forms/creating-a-custom-theme)
+
+## Open-Source
+
+This is an Open-Source module, you can find more details about Open-Source @ Jahia [in this repository](https://github.com/Jahia/open-source).
