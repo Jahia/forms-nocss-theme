@@ -51,6 +51,9 @@ parameters:
   SSH_KEY_FINGERPRINT:
     type: string
     default: "c0:e8:1d:46:76:22:73:6f:4c:e0:1e:90:c7:aa:b2:11"
+  MODULE_ID:
+    type: string
+    default: 'forms-nocss-theme'
 
 commands:
   generate_cachekey_seed:
