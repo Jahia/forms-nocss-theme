@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   docker: circleci/docker@1.7.0
   slack: circleci/slack@4.4.4
-  jahia-modules-orb: jahia/jahia-modules-orb@1
+  jahia-modules-orb: jahia/jahia-modules-orb@1.4.7
 
 # Parameters are available to all elements of config.yml, these are accessible using `pipeline.parameters.PARAMETER`
 parameters:
