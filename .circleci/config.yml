@@ -50,7 +50,7 @@ parameters:
     default: false
   SSH_KEY_FINGERPRINT:
     type: string
-    default: "c0:e8:1d:46:76:22:73:6f:4c:e0:1e:90:c7:aa:b2:11"
+    default: "45:47:45:9f:28:9b:e0:0d:74:2d:71:9c:f8:9b:3b:5d"
   MODULE_ID:
     type: string
     default: 'forms-nocss-theme'
