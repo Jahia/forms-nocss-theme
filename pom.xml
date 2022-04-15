@@ -63,7 +63,7 @@
   </scm>
   <properties>
     <jahia-module-signature>MCwCFDZSRFpkGT3BhJlGOYs86QI9rRUTAhRD7MdIztMR437s8slVYfFfu4+vWw==</jahia-module-signature>
-    <jahia.plugin.version>6.2-SNAPSHOT</jahia.plugin.version>
+    <jahia.plugin.version>6.3</jahia.plugin.version>
   </properties>
   <repositories>
     <repository>
