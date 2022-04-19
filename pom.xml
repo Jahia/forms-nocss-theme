@@ -62,7 +62,7 @@
     <tag>HEAD</tag>
   </scm>
   <properties>
-    <jahia-module-signature>MCwCFDZSRFpkGT3BhJlGOYs86QI9rRUTAhRD7MdIztMR437s8slVYfFfu4+vWw==</jahia-module-signature>
+    <jahia-module-signature>MCwCFFi8Ek6oeAajcePk/XepnGJXXWIUAhRn7mVKGv8fabcf9cjOJWqUyN6wpg==</jahia-module-signature>
     <jahia.plugin.version>6.3</jahia.plugin.version>
   </properties>
   <repositories>
