@@ -117,7 +117,7 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <Jahia-Depends>default,siteSettings,forms-core</Jahia-Depends>
+            <Jahia-Depends>forms-core</Jahia-Depends>
             <!--Higher priority than forms-core (2)-->
             <Jahia-Module-Priority>4</Jahia-Module-Priority>
           </instructions>
